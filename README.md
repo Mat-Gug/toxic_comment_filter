@@ -17,24 +17,21 @@ Additionally, `utils.py` houses custom functions utilized throughout the project
 
 Before running the project, it's considered a best practice to create a virtual environment and install the required dependencies. This helps isolate project-specific dependencies from system-wide Python packages. To achieve this, follow these steps:
 
-1. **Clone the Repository:**
-```
-git clone https://github.com/Mat-Gug/toxic_comment_filter.git
-```
-2. **Navigate to the Project Directory:**
-```
-cd toxic_comment_filter
-```
-3. **Create a Virtual Environment:**
+1. **Create a Virtual Environment:**
 - For Windows:
-  ```
-  python -m venv toxic_venv
-  ```
+  - To create a virtual environment with the default Python version:
+    ```
+    python -m venv toxic_venv
+    ```
+  - To create a virtual environment with a specific Python version, such as Python 3.11, replace `python` with `py` followed by the desired Python version:
+    ```
+    py -3.11 -m venv toxic_venv
+    ```
 - For macOS and Linux:
   ```
   python3 -m venv toxic_venv
   ```
-4. **Activate the Virtual Environment:**
+2. **Activate the Virtual Environment:**
 - For Windows (Command Prompt):
   ```
   toxic_venv\Scripts\activate
@@ -47,6 +44,14 @@ cd toxic_comment_filter
   ```
   source toxic_venv/bin/activate
   ```
+3. **Clone the Repository:**
+```
+git clone https://github.com/Mat-Gug/toxic_comment_filter.git
+```
+4. **Navigate to the Project Directory:**
+```
+cd toxic_comment_filter
+```
 5. **Install Required Dependencies:**
 ```
 pip install -r requirements.txt
